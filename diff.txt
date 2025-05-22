@@ -1,0 +1,138 @@
+import { Fragment, createElement, useCallback, useEffect, useMemo, useRef } from 'react';
+
+import { BusyStateIndicator } from '@sas/nova-commons/components/BusyStateIndicator';
+import { ButtonVariant } from '@sas/nova-commons/components/Button';
+import { Heading } from '@sas/nova-commons/components/Heading';
+import { Flow } from '@sas/nova-commons/components/Layouts/Flow';
+import { Text } from '@sas/nova-commons/components/Text';
+import { Toolbar, ToolbarItem } from '@sas/nova-commons/components/Toolbar';
+import { ZeroState } from '@sas/nova-commons/components/ZeroState';
+import { ZeroStateGit } from '@sas/react-svg';
+import { useVirtualizer } from '@tanstack/react-virtual';
+
+import _ from 'lodash';
+
+import useEditFile from '../../../../hooks/git/useGitCommitPaneOps';
+import { useAppDispatch, useAppSelector } from '../../../../hooks/redux-hooks';
+import { useLocalizer } from '../../../../hooks/useLocalizer';
+import {
+  DiffStyleClasses,
+  FileContentType,
+  GitFileStatusObject,
+  useFileContentQuery,
+} from '../../../../services/studio';
+import {
+  selectActiveFile,
+  selectCommitTabStatus,
+  selectCountForLocalChanges,
+  selectDiffForFile,
+} from '../../../../store/gitCommitTabSelector';
+import {
+  DiffForChangedFile,
+  getFileKeyForDiff,
+  setCommitTabStatus,
+  setDiffFromFileContent,
+  setFileNoDiff,
+} from '../../../../store/gitCommitTabSlice';
+import { selectActiveBranch, selectActiveRepo } from '../../../../store/gitRepoSelector';
+import { selectSessionId } from '../../../../store/sessionSelector';
+import { getViewTypeFromFilename } from '../../../../utils/files';
+import { createVirtualRows, sanitizedData } from '../../../../utils/git';
+import { createHtmlFromText } from '../../../../utils/html';
+import { isDefined } from '../../../../utils/string';
+import { showError } from '../../../dialogs/AppMessageDialog';
+import GetFileDiffAction from '../jobManager/commitPaneOps/GetFileDiffAction';
+
+import './CommitView.css';
+import cn from './CommitView.css.json';
+
+type DiffConStatus = 'loadRepo' | 'noSelection' | 'noDiff';
+
+// Zero state when initializing repository status
+// Zero state after initialize & no file selected
+const DiffConZeroState = (props: { status: DiffConStatus }) => {
+  const localize = useLocalizer();
+  const { status } = props;
+
+  return (
+    <Flow
+      testId={'gitCommit-diffZeroState'}
+      orientation="vertical"
+      spacing="m"
+      className={cn.container}
+      style={{ minHeight: '200px', alignItems: 'center', textAlign: 'center' }}
+    >
+      <ZeroState
+        icon={ZeroStateGit}
+        text={localize('app.empty.data.msg')}
+        style={{ height: 'fit-content', overflow: 'visible' }}
+      />
+      <Heading level={4} style={{ fontWeight: 'bold' }} wrapText>
+        {localize('git.commit.zeroState.title.title')}
+      </Heading>
+      {/* Select file */}
+      {status === 'noSelection' && (
+        <Text testId="gitCommit-diffZeroState-noSelection" className={cn.textBox}>
+          {localize('git.commit.zeroState.selectFile.msg')}
+        </Text>
+      )}
+      {status === 'noDiff' && (
+        <Text testId="gitCommit-diffZeroState-noDiff" className={cn.textBox}>
+          {localize('git.commit.noDiffAvailable.error.v2.msg')}
+        </Text>
+      )}
+      {status === 'loadRepo' && (
+        <Fragment>
+          {/* Edit */}
+          <Flow
+            orientation="vertical"
+            spacing="xs"
+            testId={'gitCommit-diffZeroState-edit'}
+            style={{ alignItems: 'center' }}
+          >
+            <Heading level={4} wrapText>
+              {localize('git.commit.zeroState.edit.title')}
+            </Heading>
+            <Text className={cn.textBox}>{localize('git.commit.zeroState.edit.msg')}</Text>
+          </Flow>
+          {/* Stage */}
+          <Flow
+            orientation="vertical"
+            spacing="xs"
+            style={{ alignItems: 'center' }}
+            testId={'gitCommit-diffZeroState-stage'}
+          >
+            <Heading level={4} wrapText>
+              {localize('git.commit.zeroState.stage.title')}
+            </Heading>
+            <Text className={cn.textBox}>{localize('git.commit.zeroState.stage.msg')}</Text>
+          </Flow>
+          {/* Commit */}
+          <Flow
+            orientation="vertical"
+            spacing="xs"
+            style={{ alignItems: 'center' }}
+            testId={'gitCommit-diffZeroState-commit'}
+          >
+            <Heading level={4} wrapText>
+              {localize('git.commit.zeroState.commit.title')}
+            </Heading>
+            <Text className={cn.textBox}>{localize('git.commit.zeroState.commit.msg')}</Text>
+          </Flow>
+          {/* Push */}
+          <Flow
+            orientation="vertical"
+            spacing="xs"
+            style={{ alignItems: 'center' }}
+            testId={'gitCommit-diffZeroState-push'}
+          >
+            <Heading level={4} wrapText>
+              {localize('git.commit.zeroState.push.title')}
+            </Heading>
+            <Text className={cn.textBox}>{localize('git.commit.zeroState.push.msg')}</Text>
+          </Flow>
+        </Fragment>
+      )}
+    </Flow>
+  );
+};
