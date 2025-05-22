@@ -1,0 +1,16 @@
+describe('Test CommitView', () => {
+  beforeEach(() => {
+    jest.resetModules();
+    server = startServer();
+    mockFetchGitSettings(server);
+    mockUpdateSettings(server);
+    testStore = setupStore(studioConfiguredState);
+    testStore.dispatch(
+      setActiveRepoInfo({
+        name: mockGitRepo.repositoryName,
+        path: mockGitRepo.workingPath,
+      })
+    );
+    testStore.dispatch(setActiveRepo(mockGitRepo));
+    testStore.dispatch(setGitUpdateCommitTabReady(true));
+  });
