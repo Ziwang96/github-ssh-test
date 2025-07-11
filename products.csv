@@ -1,0 +1,186 @@
+PCODE,TYPE,DESCRIP,PRICE,COST
+CC1100,Heads,Farmer,$56.00 ,$34.00 
+CC1200,Heads,Soldier,$56.00 ,$34.00 
+CC1300,Heads,Pilot,$56.00 ,$34.00 
+CC1500,Heads,Doctor,$56.00 ,$34.00 
+CC2100,Figures,Fireman,$87.00 ,$43.00 
+CC2200,Figures,Santa,$87.00 ,$43.00 
+CC2300,Figures,Policeman,$87.00 ,$43.00 
+CC2400,Figures,Ice Skater,$87.00 ,$43.00 
+CC2500,Figures,Football Player,$87.00 ,$43.00 
+CC3100,Plates,Sound of Music,$35.00 ,$17.00 
+CC3200,Plates,Wizard of Oz,$35.00 ,$17.00 
+CC3300,Plates,Norman Rockwell,$35.00 ,$17.00 
+CC3400,Plates,Beatles,$35.00 ,$17.00 
+CC3500,Plates,Christmas,$35.00 ,$17.00 
+CC3600,Plates,Elvis,$35.00 ,$17.00 
+CC3700,Plates,James Dean,$35.00 ,$17.00 
+CC4100,Animals,Dog,$45.00 ,$22.00 
+CC4200,Animals,Cat,$45.00 ,$22.00 
+CC4300,Animals,Horse,$45.00 ,$22.00 
+CC4400,Animals,Bear,$45.00 ,$22.00 
+CC4500,Animals,Camel,$45.00 ,$22.00 
+CC4600,Animals,Deer,$45.00 ,$22.00 
+CC4700,Animals,Turkey,$45.00 ,$22.00 
+CC4800,Animals,Goat,$45.00 ,$22.00 
+GD1001,Hand Tools,Shovel,$15.00 ,$7.00 
+GD1010,Hand Tools,Pick,$16.00 ,$8.00 
+GD1100,Hand Tools,Rake,$13.00 ,$6.00 
+GD1200,Hand Tools,Ax,$21.00 ,$9.00 
+GD1300,Hand Tools,Trowel,$14.00 ,$7.00 
+GD1400,Hand Tools,Edger,$32.00 ,$20.00 
+GD1500,Hand Tools,Hand Spade,$10.00 ,$4.00 
+GD1600,Hand Tools,Hand Claw,$10.00 ,$4.00 
+GD2000,Bulbs,Tulips,$14.00 ,$6.00 
+GD2100,Bulbs,Iris,$14.00 ,$6.00 
+GD2200,Bulbs,Crocis,$14.00 ,$6.00 
+GD2300,Bulbs,Daffidills,$14.00 ,$6.00 
+GD2400,Bulbs,Hybiscus,$16.00 ,$7.00 
+GD3000,Power Tools,Lawn Mover,$350.00 ,$150.00 
+GD3100,Power Tools,Weed Eater,$78.00 ,$45.00 
+GD3200,Power Tools,Leaf Blower,$84.00 ,$36.00 
+GD3300,Power Tools,Chain Saw,$160.00 ,$100.00 
+GD3400,Power Tools,Tiller,$450.00 ,$200.00 
+GD4000,Seeds,Carrots,$5.00 ,$1.00 
+GD4100,Seeds,Radishes,$3.00 ,$1.00 
+GD4200,Seeds,Lettuce,$3.00 ,$1.00 
+GD4300,Seeds,Tomatoes,$3.00 ,$1.50 
+PT1000,Dog,Bowl,$7.00 ,$2.00 
+PT1100,Dog,Blanket,$14.00 ,$4.00 
+PT1200,Dog,Food,$16.00 ,$4.00 
+PT1300,Dog,Toy,$8.00 ,$3.00 
+PT1400,Dog,Collar,$12.00 ,$5.00 
+PT2000,Cat,Collar,$12.00 ,$5.00 
+PT2100,Cat,Bowl,$7.00 ,$2.00 
+PT2200,Cat,Toy,$8.00 ,$3.00 
+PT2300,Cat,Bed,$32.00 ,$14.00 
+PT2400,Cat,Litter Box,$14.00 ,$6.00 
+PT3100,Bird,Cage,$54.00 ,$34.00 
+PT3200,Bird,Food,$12.00 ,$3.00 
+PT3300,Bird,Water Dish,$4.00 ,$1.00 
+PT3400,Bird,Toy,$6.00 ,$2.50 
+PT3500,Bird,Cage Cover,$12.00 ,$8.00 
+PT4100,Fish,Aquarium,$52.00 ,$20.00 
+PT4200,Fish,Food,$6.00 ,$2.50 
+PT4300,Fish,Ornament,$12.00 ,$5.00 
+PT4400,Fish,Heater,$12.00 ,$4.00 
+PT4500,Fish,Pump,$34.00 ,$14.00 
+PT4600,Fish,Filter,$18.00 ,$8.00 
+SP1000,Team,Foot Ball,$26.00 ,$13.00 
+SP1100,Team,Base Ball,$8.00 ,$3.00 
+SP1200,Team,Base Ball Glove,$48.00 ,$23.00 
+SP1300,Team,Hockey Stick,$23.00 ,$12.00 
+SP1400,Team,Basket Ball,$34.00 ,$16.00 
+SP1500,Team,Field Hockey Stick,$23.00 ,$12.00 
+SP1600,Team,Lacrosse Stick,$28.00 ,$12.00 
+SP2000,Recreational,Snow Skis,$320.00 ,$160.00 
+SP2200,Recreational,Roller Blades,$120.00 ,$70.00 
+SP2300,Recreational,Bicycle,$480.00 ,$200.00 
+SP2400,Recreational,Water Skis,$130.00 ,$56.00 
+SP2500,Recreational,Golf Clubs,$600.00 ,$250.00 
+SP2600,Recreational,Tennis Racket,$83.00 ,$35.00 
+SP2700,Recreational,Squash Racket,$43.00 ,$18.00 
+SP3000,Camping,Tent,$140.00 ,$60.00 
+SP3100,Camping,Back Pack,$180.00 ,$98.00 
+SP3200,Camping,Hiking Boots,$120.00 ,$80.00 
+SP3300,Camping,Compass,$21.00 ,$6.00 
+SP3400,Camping,Knife,$32.00 ,$15.00 
+SW1005,Database,Track-It-All,$560.00 ,$425.00 
+SW1207,Database,Omnibus,$499.95 ,$450.00 
+SW1526,Graphics,Easy Draw,$120.50 ,$98.00 
+SW1612,Utility,Disk Magic,$65.95 ,$50.00 
+SW1807,Utility,Backtrack,$49.95 ,$39.00 
+SW1828,Utility,Make-a-Copy,$95.25 ,$54.80 
+SW1991,Games,Quest for the King's Ear,$29.50 ,$22.75 
+SW2123,Games,Dazed Knights Tournament,$29.00 ,$22.30 
+SW2147,Utility,Virus Innovulator,$75.85 ,$59.00 
+SW2181,Utility,Memory Expander,$83.95 ,$66.00 
+SW2288,Utility,Uncorrupt,$79.95 ,$69.00 
+SW2782,Spreadsheet,Workmate IV,$189.95 ,$149.00 
+SW2842,Financial,Stock Market Analyst,$69.95 ,$45.00 
+SW2927,Spreadsheet,Superquik,$99.95 ,$85.50 
+SW3049,Database,Balboa,$499.00 ,$300.00 
+SW3104,Utility,Print-It Fast,$81.50 ,$69.00 
+SW3482,Utility,Boffo Buffers,$125.30 ,$95.00 
+SW3545,General,Pixel Perfect,$329.95 ,$244.50 
+SW3617,Graphics,Radcliffe Graphics,$585.95 ,$396.30 
+SW3625,Games,Chessmate,$35.50 ,$29.00 
+SW3802,Games,Beat the Casino,$49.95 ,$34.00 
+SW3895,Games,F-123 Fright Stimulator,$85.50 ,$56.00 
+SW3909,Graphics,Topspot 4.0,$99.95 ,$89.95 
+SW4155,Games,War of the Words,$25.00 ,$22.00 
+SW4187,Financial,Tax Relief (Version 10.40),$77.95 ,$54.50 
+SW4323,Spreadsheet,Top-To-Bottom,$95.95 ,$79.95 
+SW4550,Graphics,Paintit Deluxe,$150.50 ,$128.45 
+SW4575,Language,PASCAL,$199.95 ,$169.00 
+SW4773,Graphics,DaVinci Draws,$299.95 ,$250.00 
+SW4792,Graphics,Painter's Choice,$89.95 ,$59.75 
+SW4825,Utility,Expert Backup,$175.35 ,$139.00 
+SW4831,Training,Learn LISP,$49.95 ,$45.00 
+SW5338,Games,Zoot Suit Zeke,$36.50 ,$29.40 
+SW5493,Language,COBOL,$139.99 ,$101.00 
+SW5655,Spreadsheet,Snappy Summary,$225.75 ,$178.00 
+SW5901,Financial,Family Budget Minder,$39.99 ,$29.00 
+SW5952,Training,"C Si, Si",$42.00 ,$35.00 
+SW6180,Spreadsheet,Bottom Line,$112.50 ,$89.90 
+SW6269,Games,Surgical Shortcuts,$23.95 ,$19.00 
+SW6352,Language,DOS 8.9,$499.95 ,$399.00 
+SW6531,Games,Deviant Sumo Lizards,$49.00 ,$39.00 
+SW7013,Graphics,Professional Draw,$105.00 ,$89.95 
+SW7221,Graphics,Colorama,$49.95 ,$39.95 
+SW7271,Training,"Easy as Uno, Dos, Tres",$30.00 ,$23.00 
+SW7383,Language,FORTRAN,$155.95 ,$129.00 
+SW7384,Publishing,The Word's Out,$150.50 ,$125.00 
+SW7385,Spreadsheet,Fudge-It,$155.75 ,$102.00 
+SW7573,Language,BASIC,$125.38 ,$100.00 
+SW7585,Publishing,Spel-It-Rite,$149.95 ,$99.99 
+SW7823,Network,Connect-It Plus,$325.87 ,$229.99 
+SW7935,Games,Foxtrot and Tango II,$49.95 ,$34.00 
+SW8001,Spreadsheet,Totals-R-Us,$172.50 ,$115.90 
+SW8241,Network,Tete-a-Tete,$353.95 ,$232.00 
+SW8376,Publishing,Desktop Commando,$350.00 ,$245.00 
+SW8511,Publishing,Forms for Bureaucrats,$129.00 ,$89.00 
+SW9023,Network,Lantastic 5.5,$135.50 ,$125.00 
+SW9521,Games,Vanna Visits Vancouver,$115.00 ,$84.00 
+SW9604,Games,Battle for the Seas,$189.99 ,$142.50 
+SW9782,Games,"Flys, Hooks, and Bobbers",$19.95 ,$9.00 
+TY1100,Sporting Goods,Watermark,$15.99 ,$11.49 
+TY1200,Sporting Goods,BB Shooter,$27.59 ,$18.34 
+TY1300,Sporting Goods,Fake Jake,$5.99 ,$3.59 
+TY1400,Sporting Goods,War Fighter,$13.49 ,$9.84 
+TY1500,Sporting Goods,Football Pro,$19.99 ,$13.21 
+TY1600,Sporting Goods,Baseball Jr.,$13.49 ,$8.07 
+TY1650,Sporting Goods,Skateboard,$18.99 ,$13.51 
+TY1700,Sporting Goods,T-Ball Set,$27.98 ,$21.44 
+TY1750,Sporting Goods,Rollerskates,$37.69 ,$31.29 
+TY1800,Sporting Goods,Basketball,$38.99 ,$30.02 
+TY1850,Sporting Goods,Rollerblades,$56.97 ,$44.97 
+TY1900,Sporting Goods,Bicycle,$189.90 ,$166.50 
+TY1950,Sporting Goods,Tricycle,$128.97 ,$113.37 
+TY2100,Play Mates,Crawly Molly,$32.29 ,$23.39 
+TY2200,Play Mates,Dress-Up Girl,$18.99 ,$15.41 
+TY2300,Play Mates,Cradle Kid,$23.99 ,$19.43 
+TY2400,Play Mates,Teddy Bear,$19.99 ,$13.09 
+TY2500,Play Mates,Monkey,$14.89 ,$11.49 
+TY2600,Play Mates,Puppy Dog,$16.49 ,$10.49 
+TY2700,Play Mates,Kitty Cat,$13.59 ,$9.03 
+TY3100,Child's World,My Own Kitchen,$48.99 ,$36.23 
+TY3200,Child's World,Iron It,$7.98 ,$5.55 
+TY3300,Child's World,My House,$129.99 ,$98.49 
+TY3400,Child's World,Accessory Kit,$23.97 ,$18.29 
+TY3500,Child's World,Gas Station,$33.59 ,$24.80 
+TY3600,Child's World,Barn Yard,$19.99 ,$16.40 
+TY3700,Child's World,Shopping Mall,$38.99 ,$26.40 
+TY3800,Child's World,Train Set,$79.99 ,$63.19 
+TY4100,Baby Toys,Silver Rattle,$26.99 ,$21.69 
+TY4200,Baby Toys,Cloth Rattle,$7.98 ,$6.78 
+TY4300,Baby Toys,Clown Rattle,$12.99 ,$8.49 
+TY4400,Baby Toys,ABC-123,$13.99 ,$9.19 
+TY4500,Baby Toys,Big Blocks,$15.89 ,$12.49 
+TY4600,Baby Toys,Block Bucket,$8.96 ,$7.36 
+TY4700,Baby Toys,Snap Ems,$14.98 ,$11.52 
+TY4800,Baby Toys,Stackables,$4.99 ,$3.96 
+TY5100,Outdoor,Wading Pool,$39.99 ,$25.19 
+TY5200,Outdoor,Animal Float,$6.99 ,$3.53 
+TY5300,Outdoor,Jungle Gym,$69.89 ,$54.94 
+TY5400,Outdoor,Rope Swing,$13.59 ,$9.24 
